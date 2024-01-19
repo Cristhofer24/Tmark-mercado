@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/*Body Cuerpo de la pagina*/
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Imagen logotipo*/
+nav img {
+    width: 50px;
+    height: 50px;
+}
+
+/*Selector de la clase container*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*Header*/
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../imagenes/image.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+}
+
+/*Slogan*/
+.contenido {
+    text-align: center;
+}
+
+.contenido p {
+    font-size: 35px;
+    color: white;
+    padding: 0 250px;
+    margin-bottom: 25px;
+
+}
+
+.contenido h1 {
+    font-size: 75px;
+    line-height: 80px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+
+}
+
+/* Boton diseño*/
+.btn {
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #7E2E1B;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 9px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #8D463C;
+    color: white;
+
+}
+
+/*Practica grid*/
+.contenido-tmark {
+    padding: 100px 0;
+    position: relative;
+}
+
+.tmark-informacion {
+    text-align: center;
+}
+
+.tmark-informacion h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    padding: 0 250px;
+    margin-bottom: 15px;
+}
+
+.tmark-informacion h2::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: green;
+}
+
+.know {
+    font-size: 50px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    padding: 0 250px;
+    margin-bottom: 15px;
+}
+
+.know::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: green;
+}
+
+.tmark-informacion p {
+    font-size: 25px;
+    color: #414247;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    cursor: default;
+}
+
+.tmark-img {
+    position: center;
+    width: 300px;
+    height: 300px;
+    top: 0;
+    right: 0;
+
+}
+
+/*contactos*/
+.formulario {
+    padding: 0 350px;
+}
+
+form {
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 520px;
+    height: 320;
+}
+
+.inputgroup {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+label {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+input,
+textarea {
+    outline: none;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    background-color: #edfff0;
+    border: 2px solid #fbfaf1;
+}
+
+.btn {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.txt-formulario a {
+    color: grey;
+    text-decoration: none;
+    text-align: center;
+    padding: 0 10px;
+}
+
+/*Iconos*/
+/*.RS {
+    padding: 0 450px;
+    height: 40vh;
+}
+*/
+.icon{
+    padding: 0 450px;
+    height: 40vh;
+}
+.icon a {
+    text-decoration: none;
+}
+.icon{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.icon img {
+    padding: 15px;
+    height: 90px;
+    width: 90px;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+.icon img:hover {
+    transform: translateY(-3%);
+
+}
+
+.redes {
+    font-size: 25px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.redes::after {
+    content: "";
+    width: 60%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: green;
+}
+
+/*Footer o pie de pagina */
+.footer {
+    padding: 100px 0;
+    background-color: rgb(141, 72, 6);
+}
+
+.footer-contenido {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link h3 {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 15;
+}
+
+.link a {
+    font-size: 16px;
+    color: white;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.link p {
+    font-size: 16px;
+    color: white;
+    display: block;
+    margin-bottom: 15px;
+}
+
+
+/*Responsive*/
+@media(max-width:991px) {
+    header {
+        min-height: 0vh;
+    }
+
+    .contenido {
+        padding: 100px 30px;
+    }
+
+    .contenido p {
+        padding: 0;
+    }
+
+    .contenido-tmark {
+        padding: 30px;
+    }
+
+    .tmark-informacion h2 {
+        padding: 0;
+    }
+
+    .know {
+        text-align: center;
+        padding: 0;
+    }
+ 
+    .tmark-img {
+        display: initial;
+    }
+
+    .formulario {
+        padding: 50px 30px;
+    }
+
+    form {
+        padding: 50px 30px;
+        width: 100%;
+    }
+
+    input {
+        padding: 15px;
+    }
+.icon{
+    padding: 0 60px;
+    height: 15vh;
+}
+.redes::after {
+    content: "";
+    width: 80%;
+    height: 4px;
+    
+}
+    .redes{
+        text-align: center;
+        padding: 0;
+    }
+    .footer {
+        padding: 30px;
+        margin-top: 90px;
+    }
+
+    .footer-contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
